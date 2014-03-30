@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 # init.rb : set up $LOAD_PATH and provide an easy accessor
-# Additionally, use the 'app.yml' file to fill in any variables in ENV
+#
+# Use a YAML config file, specified either by ENV['CONFIG_YML'] or 'app.yml',
+# to fill in any missing variables in ENV. Note that ENV will not be overridden.
 #
 require 'yaml'
 
